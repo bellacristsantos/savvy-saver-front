@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* font-size: 62.5%; */
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
+  background-color: #000024;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
   display: flex;
   flex-direction: column;
+  /* background-color: red; */
+}
+
+.app-menu {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding: 20px;
+  padding: 42px 82px;
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+}
+
+.currency-logo {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.menu-links {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 22px;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.menu-item {
+  margin-left: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+  color: rgba(255, 255, 255, 0.7);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-item:hover {
+  color: #FF5100
+}
+
+.active-link{
+  border-bottom: 2px solid #FF5100;
+  padding-bottom: 6px;
+  color: #fff
 }
